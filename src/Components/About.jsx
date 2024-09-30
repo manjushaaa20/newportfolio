@@ -35,7 +35,7 @@ const About = () => {
   return (
     <AboutSection>
       {/* Profile Picture */}
-      <ProfilePic src="/port.JPG" alt="Manjusha's Profile Picture" />
+      <ProfilePic src="port.JPG" alt="Manjusha's Profile Picture" />
 
       {/* Your personal details */}
       <h2>Manjusha</h2>
