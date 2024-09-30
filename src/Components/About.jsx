@@ -11,7 +11,6 @@ const AboutSection = styled.section`
   margin: 2rem auto;
   text-align: center;
   margin-bottom 100px,100px,100px,100px;
-  line-hieght:100px
 `;
 
 const ProfilePic = styled.img`
@@ -35,7 +34,7 @@ const About = () => {
   return (
     <AboutSection>
       {/* Profile Picture */}
-      <ProfilePic src="port.JPG" alt="Manjusha's Profile Picture" />
+      <ProfilePic src="/port.JPG" alt="Manjusha's Profile Picture" />
 
       {/* Your personal details */}
       <h2>Manjusha</h2>
