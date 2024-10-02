@@ -1,48 +1,51 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ProjectGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+// Projects section styling
+const ProjectsSection = styled.section`
+  background-color: #e6f7ff;
+  padding: 4rem 2rem; /* Add padding */
+  text-align: center;
+  margin-bottom: 2rem; /* Add margin below */
 `;
 
-const ProjectCard = styled.div`
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+const ProjectList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+`;
 
-  &:hover {
-    transform: translateY(-5px);
-  }
-
-  h3 {
-    color: #007bff;
-  }
-
+const ProjectItem = styled.li`
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  
   a {
-    margin-top: 1rem;
-    display: inline-block;
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0056b3; /* Darker color on hover */
+    }
   }
 `;
 
 const Projects = () => {
   return (
-    <ProjectGrid>
-      <ProjectCard>
-        <h3>Portfolio Website</h3>
-        <p>A personal portfolio website built using HTML, CSS, and React.</p>
-        <a href="#">View Project</a>
-      </ProjectCard>
-      <ProjectCard>
-        <h3>ToDo List App</h3>
-        <p>A simple ToDo list app created using Node.js and React.</p>
-        <a href="#">View Project</a>
-      </ProjectCard>
-    </ProjectGrid>
+    <ProjectsSection id="projects">
+      <h2>Projects</h2>
+      <p>Check out my project below:</p>
+      <ProjectList>
+        <ProjectItem>
+          <h3>Kadri Manjunatheshwara Temple</h3>
+          <p>A beautiful website showcasing the Kadri Manjunatheshwara Temple.</p>
+          <a href="https://manjushaaa20.github.io/KadriManjunatheshwara/temple" target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+        </ProjectItem>
+        {/* Add more projects here if needed */}
+      </ProjectList>
+    </ProjectsSection>
   );
 };
 
